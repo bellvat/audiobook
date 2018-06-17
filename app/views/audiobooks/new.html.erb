@@ -1,0 +1,11 @@
+<h1>Audiobooks</h1>
+<%= @message %>
+<%= form_with scope: :book, url: audiobooks_path, local: true do |form| %>
+  <p>
+    <%= form.label :title %><br>
+    <%= form.text_field :title %>
+  </p>
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
