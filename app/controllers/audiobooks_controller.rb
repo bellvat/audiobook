@@ -18,6 +18,7 @@ class AudiobooksController < ApplicationController
 
   def show
     @book = Audiobook.find(params[:id])
+    @audio = @book.doc_parse
   end
 
   private
